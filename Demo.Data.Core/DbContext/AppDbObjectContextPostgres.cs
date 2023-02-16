@@ -9,7 +9,7 @@ using System.Linq;
 using System.Reflection;
 using Demo.Common.Enums;
 
-namespace Demo.Data.Core.DbContext
+namespace Demo.Core.Data.DbContext
 {
     public abstract class AppDbObjectContextPostgres : DbObjectContextBase
     {

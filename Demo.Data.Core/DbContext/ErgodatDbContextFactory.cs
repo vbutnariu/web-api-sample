@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo.Data.Core.DbContext
+namespace Demo.Core.Data.DbContext
 {
 	public class ErgodatDbContextFactory : IDbContextFactory
 	{

@@ -13,7 +13,7 @@ using System.Threading;
 using System.Text;
 using Microsoft.Data.SqlClient;
 
-namespace Demo.Data.Core.DbContext
+namespace Demo.Core.Data.DbContext
 {
 	public abstract class SqlServerAppDbObjectContext : DbObjectContextBase
 	{

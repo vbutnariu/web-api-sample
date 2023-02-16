@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Demo.Data.Core.DbContext
+namespace Demo.Core.Data.DbContext
 {
     public class ApplicationDbTransaction : IDbTransaction
     {

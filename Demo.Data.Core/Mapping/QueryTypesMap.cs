@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Demo.Core.DomainModel.QueryTypes;
 
-namespace Demo.Data.Core.Mapping
+namespace Demo.Core.Data.Mapping
 {
     public partial class GuidQueryTypeMap : QueryTypeConfiguration<GuidQueryType>
     {

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Demo.Common.Enums;
 using System;
 
-namespace Demo.Data.Core
+namespace Demo.Core.Data
 {
 	/// <summary>
 	/// Represents base entity mapping configuration

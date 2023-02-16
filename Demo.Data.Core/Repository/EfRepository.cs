@@ -17,7 +17,7 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Demo.Common.Attributes;
 
-namespace Demo.Data.Core
+namespace Demo.Core.Data
 {
 	/// <summary>
 	/// Entity Framework repository

@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Demo.Core.DomainModel;
 
-namespace Demo.Data.Core.Mapping
+namespace Demo.Core.Data.Mapping
 {
 	public class ScheduleTaskMap : EntityTypeConfiguration<ScheduleTask>
     {

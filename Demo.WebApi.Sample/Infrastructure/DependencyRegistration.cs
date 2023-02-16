@@ -3,11 +3,11 @@
 using Demo.Common.Cache;
 using Demo.Core.Caching;
 using Demo.Core.Data;
+using Demo.Core.Data.DbContext;
 using Demo.Core.DepeandencyManagement;
 using Demo.Core.Events;
 using Demo.Core.Infrastructure;
-using Demo.Data.Core;
-using Demo.Data.Core.DbContext;
+
 using Demo.Resources.Localization;
 using Demo.Services.Events;
 using Demo.Services.Tasks;
@@ -38,6 +38,7 @@ namespace Demo.WebApi.Ergodat.Infrastructure
 
 			builder.AddSingleton<ILocalizationService, LocalizationService>();
 			builder.AddSingleton<ILocker, MemoryCacheManager>();
+
 			builder.AddSingleton<SqlParameterFactory>();
 			builder.AddSingleton<IApplicationInfo, WebApplicationInfo>();
 			builder.AddSingleton<IEventPublisher, EventPublisher>();

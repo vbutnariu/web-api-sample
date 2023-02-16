@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Demo.Data.Core.Helpers
+namespace Demo.Core.Data.Helpers
 
 {
 

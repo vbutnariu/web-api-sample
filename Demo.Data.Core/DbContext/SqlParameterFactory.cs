@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.Text;
 
-namespace Demo.Data.Core.DbContext
+namespace Demo.Core.Data.DbContext
 {
     public class SqlParameterFactory
     {

@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Demo.Common.Enums;
 
-namespace Demo.Data.Core
+namespace Demo.Core.Data
 {
 	/// <summary>
 	/// Represents base query type mapping configuration

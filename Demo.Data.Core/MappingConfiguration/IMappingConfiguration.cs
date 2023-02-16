@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Demo.Common.Enums;
 
-namespace Demo.Data.Core
+namespace Demo.Core.Data
 {
     /// <summary>
     /// Represents database context model mapping configuration
