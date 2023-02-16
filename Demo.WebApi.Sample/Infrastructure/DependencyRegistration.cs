@@ -42,6 +42,7 @@ namespace Demo.WebApi.Ergodat.Infrastructure
 			builder.AddSingleton<SqlParameterFactory>();
 			builder.AddSingleton<IApplicationInfo, WebApplicationInfo>();
 			builder.AddSingleton<IEventPublisher, EventPublisher>();
+			builder.AddTran
 
 			//Add scoped services
 			builder.AddScoped<IDbContextFactory, ErgodatDbContextFactory>();
