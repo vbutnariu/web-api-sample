@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NC.Services.Tasks.TaskManager">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAACAAAQAAAAAAAAAAAAAAAAAAYAAAAAAAQAA=</HashCode>
+      <FileName>Tasks\TaskManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NC.Services.Tasks.TaskThread">
+    <Position X="3.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAASAAACAAAAAAAIAIQAAAAAAAAggBAAALAEACAEA=</HashCode>
+      <FileName>Tasks\TaskThread.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NC.Services.TasksImplementation.ComputeWoundStatusTask">
+    <Position X="7.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>TasksImplementation\ComputeWoundStatusTask.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NC.Services.TasksImplementation.GenerateVisitAppointmentsTask">
+    <Position X="7.25" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAEA=</HashCode>
+      <FileName>TasksImplementation\GenerateVisitAppointmentsTask.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NC.Services.Tasks.BackgroundTask">
+    <Position X="10.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAEAAAQAAgAAAAAQAAAAAAAAAEA=</HashCode>
+      <FileName>Tasks\BackgroundTask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="NC.Services.Tasks.IScheduleTask">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Tasks\IScheduleTask.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NC.Services.Tasks.IScheduleTaskService">
+    <Position X="1" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAABAAAABAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAgA=</HashCode>
+      <FileName>Tasks\IScheduleTaskService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+   <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+   </PropertyGroup>
+
+   <ItemGroup>
+     <Compile Remove="EntityMetadata\Extensions\**" />
+     <EmbeddedResource Remove="EntityMetadata\Extensions\**" />
+     <None Remove="EntityMetadata\Extensions\**" />
+   </ItemGroup>
+
+   
+
+  
+
+  <ItemGroup>
+    <Folder Include="Cryptography\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MathParser.org-mXparser" Version="4.4.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo.Resources.Core\Demo.Resources.Core.csproj" />
+
+  </ItemGroup>
+
+</Project>
