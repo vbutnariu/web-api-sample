@@ -52,13 +52,25 @@ namespace Demo.Core.Data.DbContext
 		#region Methods
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			base.OnModelCreating(modelBuilder);
-		}
+            modelBuilder.ApplyConfiguration(new Configurations.DeviceFirmwareDeviceModelsConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.DeviceFirmwareVersionsConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.DeviceFirmwaresConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.DeviceModelsConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.DeviceTwinPropertiesConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.DevicesConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.ObjectUserRolesConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.SimulatedDevicesConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.TenantKeyAccountAssignmentsConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.TenantKeyAccountsConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.TenantsConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.UserAzureB2cObjectIdAssignmentsConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.UsersConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.VirtualLaboratoriesConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.VsfilesObjectTypeIdMappingEntriesConfiguration());
+        }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-
-
 		
 
 			optionsBuilder.UseNpgsql(this.connectionString,
@@ -68,7 +80,7 @@ namespace Demo.Core.Data.DbContext
 					//b.MigrationsHistoryTable("MigrationHistory", "main");
 				});
 
-			optionsBuilder.EnableSensitiveDataLogging();
+			//optionsBuilder.EnableSensitiveDataLogging();
 
 			base.OnConfiguring(optionsBuilder);
 

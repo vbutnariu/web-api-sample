@@ -36,4 +36,8 @@
     <ProjectReference Include="..\Demo.Data.Core\Demo.Data.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DeviceModels\" />
+  </ItemGroup>
+
 </Project>

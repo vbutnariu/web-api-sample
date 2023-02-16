@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Demo.Core.Data.Configurations
 {
-    public partial class ObjectUserRolesConfiguration : EntityTypeConfiguration<ObjectUserRoles>
+    public partial class ObjectUserRolesConfiguration : IEntityTypeConfiguration<ObjectUserRoles>
     {
         public void Configure(EntityTypeBuilder<ObjectUserRoles> entity)
         {

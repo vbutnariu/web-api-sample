@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Demo.Core.Data.Configurations
 {
-    public partial class DeviceTwinPropertiesConfiguration : EntityTypeConfiguration<DeviceTwinProperties>
+    public partial class DeviceTwinPropertiesConfiguration : IEntityTypeConfiguration<DeviceTwinProperties>
     {
         public void Configure(EntityTypeBuilder<DeviceTwinProperties> entity)
         {

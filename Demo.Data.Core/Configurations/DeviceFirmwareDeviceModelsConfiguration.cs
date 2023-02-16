@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Demo.Core.Data.Configurations
 {
-    public partial class DeviceFirmwareDeviceModelsConfiguration : EntityTypeConfiguration<DeviceFirmwareDeviceModels>
+    public partial class DeviceFirmwareDeviceModelsConfiguration : IEntityTypeConfiguration<DeviceFirmwareDeviceModels>
     {
         public void Configure(EntityTypeBuilder<DeviceFirmwareDeviceModels> entity)
         {

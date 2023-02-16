@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Demo.Core.Data.Configurations
 {
-    public partial class TenantKeyAccountsConfiguration : EntityTypeConfiguration<TenantKeyAccounts>
+    public partial class TenantKeyAccountsConfiguration : IEntityTypeConfiguration<TenantKeyAccounts>
     {
         public void Configure(EntityTypeBuilder<TenantKeyAccounts> entity)
         {

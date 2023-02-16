@@ -9,6 +9,7 @@ using Demo.Core.Events;
 using Demo.Core.Infrastructure;
 
 using Demo.Resources.Localization;
+using Demo.Services.Core.Device;
 using Demo.Services.Events;
 using Demo.Services.Tasks;
 using Demo.WebApi.Ergodat.Authorization.Provider;
@@ -42,7 +43,7 @@ namespace Demo.WebApi.Ergodat.Infrastructure
 			builder.AddSingleton<SqlParameterFactory>();
 			builder.AddSingleton<IApplicationInfo, WebApplicationInfo>();
 			builder.AddSingleton<IEventPublisher, EventPublisher>();
-			builder.AddTran
+			
 
 			//Add scoped services
 			builder.AddScoped<IDbContextFactory, ErgodatDbContextFactory>();
@@ -53,6 +54,7 @@ namespace Demo.WebApi.Ergodat.Infrastructure
 			//builder.AddTransient<ITokenProvider, JwtAuthorizationTokenProvider>();
 			builder.AddTransient(typeof(ICache<>), typeof(Cache<>));
 			builder.AddTransient<IScheduleTaskService, ScheduleTaskService>();
+			builder.AddTransient<IDeviceService, DeviceService>();
 			//builder.AddTransient<IAppointmentService, AppointmentService>();
 
 

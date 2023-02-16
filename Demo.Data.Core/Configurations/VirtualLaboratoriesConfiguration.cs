@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Demo.Core.Data.Configurations
 {
-    public partial class VirtualLaboratoriesConfiguration : EntityTypeConfiguration<VirtualLaboratories>
+    public partial class VirtualLaboratoriesConfiguration : IEntityTypeConfiguration<VirtualLaboratories>
     {
         public void Configure(EntityTypeBuilder<VirtualLaboratories> entity)
         {

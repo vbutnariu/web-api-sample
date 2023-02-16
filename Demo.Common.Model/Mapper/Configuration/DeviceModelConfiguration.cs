@@ -1,14 +1,8 @@
 ﻿using AutoMapper;
-using Demo.Common.Model.Autorization;
 using Demo.Core.DomainModel.App;
-using Demo.Core.DomainModel.Authorization;
 using Demo.Core.Mapper;
-using Pm.Common.Model.Device;
+using Pm.Common.Model.DeviceModel;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Pm.Common.Model.Mapper.Configuration
 {
@@ -20,11 +14,19 @@ namespace Pm.Common.Model.Mapper.Configuration
         {
             Action<IMapperConfigurationExpression> action = cfg =>
             {
-                cfg.CreateMap<DeviceModel, Devices>()
+                cfg.CreateMap<Device.DeviceModel, Devices>()
                 .ForMember(s => s.DeviceTwinProperties, d => d.Ignore());
 
 
-                cfg.CreateMap<Devices, DeviceModel>();
+                cfg.CreateMap<Devices, Device.DeviceModel>();
+
+
+                cfg.CreateMap<DeviceModelDto, DeviceModels>()
+               .ForMember(s => s.DeviceFirmwareDeviceModels, d => d.Ignore());
+
+
+                cfg.CreateMap<DeviceModels, DeviceModelDto>();
+
 
 
             };
