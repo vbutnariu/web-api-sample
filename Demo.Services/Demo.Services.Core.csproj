@@ -10,6 +10,12 @@
     <RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
    </PropertyGroup>
 
+   <ItemGroup>
+     <Compile Remove="Article\**" />
+     <EmbeddedResource Remove="Article\**" />
+     <None Remove="Article\**" />
+   </ItemGroup>
+
   
 
  
@@ -21,10 +27,6 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="RangeTree" Version="3.0.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Article\" />
   </ItemGroup>
 
   <ItemGroup>
