@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Demo.Core.Data.Configurations
 {
-    public partial class VsfilesObjectTypeIdMappingEntriesConfiguration : IEntityTypeConfiguration<VsfilesObjectTypeIdMappingEntries>
+    public partial class VsfilesObjectTypeIdMappingEntriesConfiguration : EntityTypeConfiguration<VsfilesObjectTypeIdMappingEntries>
     {
         public void Configure(EntityTypeBuilder<VsfilesObjectTypeIdMappingEntries> entity)
         {

@@ -12,13 +12,13 @@ namespace Demo.Core.Data.DbContext
 	public class ErgodatDbContextFactory : IDbContextFactory
 	{
 
-		private readonly ErgodatContext context;
+		private readonly DemoContext context;
 		private readonly IConfiguration configuration;
 
 		
 		public ErgodatDbContextFactory(IConfiguration configuration)
 		{
-			context = new ErgodatContext(configuration.GetConnectionString("DbContext"));
+			context = new DemoContext(configuration.GetConnectionString("DbContext"));
 			this.configuration = configuration;
 		}
 		public Catalog DefaultCatalog { get; set; } = Catalog.Ergonomed;

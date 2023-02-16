@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Demo.Core.Data.Configurations
 {
-    public partial class UserAzureB2cObjectIdAssignmentsConfiguration : IEntityTypeConfiguration<UserAzureB2cObjectIdAssignments>
+    public partial class UserAzureB2cObjectIdAssignmentsConfiguration : EntityTypeConfiguration<UserAzureB2cObjectIdAssignments>
     {
         public void Configure(EntityTypeBuilder<UserAzureB2cObjectIdAssignments> entity)
         {

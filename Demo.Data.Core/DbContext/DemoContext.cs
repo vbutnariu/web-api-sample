@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace Demo.Core.Data.DbContext
 {
-	public class ErgodatContext : DbObjectContextBase
+	public class DemoContext : DbObjectContextBase
 	{
 
 		#region Fields
 		private readonly string connectionString;
-		private readonly DatabaseProviderEnum provider = DatabaseProviderEnum.SqlServer;
+		private readonly DatabaseProviderEnum provider = DatabaseProviderEnum.Postgres;
 
 		
 		#endregion
@@ -32,7 +32,9 @@ namespace Demo.Core.Data.DbContext
 		#endregion
 		#region Ctor
 
-		public ErgodatContext(string connectionString) : base()
+		
+
+		public DemoContext(string connectionString) : base()
 		{
 			if (string.IsNullOrEmpty(connectionString))
 			{
@@ -56,17 +58,10 @@ namespace Demo.Core.Data.DbContext
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
 
-			SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectionString);
-			// add always trust to server certificate
-			builder.TrustServerCertificate = true;
 
-			// if initial catalog is set in the connection string then we do not oerride with the specified catalog 
-			if (string.IsNullOrEmpty(builder.InitialCatalog))
-			{
-				builder.InitialCatalog = this.Catalog.GetCatalogName();
-			}
+		
 
-			optionsBuilder.UseSqlServer(builder.ToString(),
+			optionsBuilder.UseNpgsql(this.connectionString,
 				b =>
 				{
 					//b.MigrationsAssembly("Pm.Data.Migrations");
