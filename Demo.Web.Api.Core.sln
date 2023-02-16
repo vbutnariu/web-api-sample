@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Data.Core", "Demo.Data
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Services.Core", "Demo.Services\Demo.Services.Core.csproj", "{E90D79C3-18D3-44A5-A021-A61E028EDF36}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pm.Common.Model", "Demo.Common.Model\Pm.Common.Model.csproj", "{22CD27FD-B47A-4C97-8E21-01CE7F1D2572}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Common.Model", "Demo.Common.Model\Demo.Common.Model.csproj", "{22CD27FD-B47A-4C97-8E21-01CE7F1D2572}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.WebApi.Server", "Demo.WebApi.Sample\Demo.WebApi.Server.csproj", "{A6B56E94-7B2A-4791-BF7B-8A4EB3E6DF36}"
 EndProject
