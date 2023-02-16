@@ -9,8 +9,13 @@
     <RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
    </PropertyGroup>
 
+   <ItemGroup>
+     <Compile Remove="NewFolder\**" />
+     <EmbeddedResource Remove="NewFolder\**" />
+     <None Remove="NewFolder\**" />
+   </ItemGroup>
+
   <ItemGroup>
-    <Folder Include="NewFolder\" />
     <Folder Include="Properties\" />
   </ItemGroup>
 
